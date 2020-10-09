@@ -7,7 +7,7 @@ var access = function( elems, fn, key, value, chainable, emptyGet, raw ) {
 	var i = 0,
 		len = elems.length,
 		bulk = key == null;
-
+		min = 0;
 	// Sets many values
 	if ( toType( key ) === "object" ) {
 		chainable = true;
